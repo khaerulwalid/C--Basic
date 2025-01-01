@@ -8,7 +8,11 @@ namespace Basic_C_
 {
     internal class ConvertTipeData
     {
-        static void Main(string[] args)
+        static void Main(String[] args)
+        {
+            OperatorPerbandingan.OperatorPerbandingaMethod();
+        }
+        public static void Conversi()
         {
             Console.WriteLine("=== Program Demonstrasi Konversi Tipe Data ===");
 
@@ -20,10 +24,12 @@ namespace Basic_C_
             {
                 int resultInt = Convert.ToInt32(inputInt);
                 Console.WriteLine($"Konversi berhasil, Hasil int : {resultInt}");
-            } catch (FormatException)
+            }
+            catch (FormatException)
             {
                 Console.WriteLine("Error: Input bukan format angka valid untuk int.");
-            } catch (OverflowException)
+            }
+            catch (OverflowException)
             {
                 Console.WriteLine("Error: Angka terlalu besar atau kecil untuk tipe int.");
             }
@@ -55,10 +61,11 @@ namespace Basic_C_
             // Contoh TryParse
             Console.Write("\nMasukkan sebuah angka (TryParse ke int): ");
             string inputTryParse = Console.ReadLine();
-            if(int.TryParse(inputTryParse, out int parsedInt))
+            if (int.TryParse(inputTryParse, out int parsedInt))
             {
                 Console.WriteLine($"TryParse berhasil! Hasil int: {parsedInt}");
-            } else
+            }
+            else
             {
                 Console.WriteLine("TryParse gagal! Input bukan angka yang valid untuk int.");
             }
