@@ -1,0 +1,8 @@
+﻿# Ignore Visual Studio temporary files, build results, and
+# folders.
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.vcxproj.user
