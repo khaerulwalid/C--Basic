@@ -20,6 +20,14 @@ namespace Basic_C_
 
             // Tampilkan hasil
             Console.WriteLine(result);
+
+
+            // PROGRAM MENCARI ANGKA TERTINGGI
+            int[] numbers = { 1, 4, 2, 1, 51, 67, 8, 32, 21, 97, 65 };
+
+            string result1 = MathHelper.getMax(numbers);
+
+            Console.WriteLine(result1);
         }
         public static void Conversi()
         {
