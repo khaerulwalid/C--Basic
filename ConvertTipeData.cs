@@ -10,7 +10,16 @@ namespace Basic_C_
     {
         static void Main(String[] args)
         {
-            SwitchCase.getDay();
+            CountChar countChar = new CountChar();
+
+            // Contoh pemanggilan getChar dengan parameter
+            string text = "This is a sample text with some f's";
+            char target = 'f';
+
+            string result = countChar.getChar(text, target);
+
+            // Tampilkan hasil
+            Console.WriteLine(result);
         }
         public static void Conversi()
         {
