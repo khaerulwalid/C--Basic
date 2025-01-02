@@ -10,7 +10,7 @@ namespace Basic_C_
     {
         static void Main(String[] args)
         {
-            OperatorPerbandingan.OperatorPerbandingaMethod();
+            SwitchCase.getDay();
         }
         public static void Conversi()
         {
