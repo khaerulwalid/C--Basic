@@ -28,6 +28,16 @@ namespace Basic_C_
             string result1 = MathHelper.getMax(numbers);
 
             Console.WriteLine(result1);
+
+
+            var data1 = new List<string> { "ant", "bison", "camel", "duck", "elephant" };
+
+            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 2) as List<string>)); // [ 'camel', 'duck', 'elephant' ]
+            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 2, 4) as List<string>)); // [ 'camel', 'duck' ]
+            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 1, 5) as List<string>)); // [ 'bison', 'camel', 'duck', 'elephant' ]
+            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1) as List<string>)); // [ 'ant', 'bison', 'camel', 'duck', 'elephant' ]
+            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 20) as List<string>)); // []
+            Console.WriteLine(LatihanArray.slice() as string); // Invalid data
         }
         public static void Conversi()
         {
