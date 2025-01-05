@@ -10,34 +10,43 @@ namespace Basic_C_
     {
         static void Main(String[] args)
         {
-            CountChar countChar = new CountChar();
+            //CountChar countChar = new CountChar();
 
-            // Contoh pemanggilan getChar dengan parameter
-            string text = "This is a sample text with some f's";
-            char target = 'f';
+            //// Contoh pemanggilan getChar dengan parameter
+            //string text = "This is a sample text with some f's";
+            //char target = 'f';
 
-            string result = countChar.getChar(text, target);
+            //string result = countChar.getChar(text, target);
 
-            // Tampilkan hasil
-            Console.WriteLine(result);
-
-
-            // PROGRAM MENCARI ANGKA TERTINGGI
-            int[] numbers = { 1, 4, 2, 1, 51, 67, 8, 32, 21, 97, 65 };
-
-            string result1 = MathHelper.getMax(numbers);
-
-            Console.WriteLine(result1);
+            //// Tampilkan hasil
+            //Console.WriteLine(result);
 
 
-            var data1 = new List<string> { "ant", "bison", "camel", "duck", "elephant" };
+            //// PROGRAM MENCARI ANGKA TERTINGGI
+            //int[] numbers = { 1, 4, 2, 1, 51, 67, 8, 32, 21, 97, 65 };
 
-            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 2) as List<string>)); // [ 'camel', 'duck', 'elephant' ]
-            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 2, 4) as List<string>)); // [ 'camel', 'duck' ]
-            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 1, 5) as List<string>)); // [ 'bison', 'camel', 'duck', 'elephant' ]
-            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1) as List<string>)); // [ 'ant', 'bison', 'camel', 'duck', 'elephant' ]
-            Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 20) as List<string>)); // []
-            Console.WriteLine(LatihanArray.slice() as string); // Invalid data
+            //string result1 = MathHelper.getMax(numbers);
+
+            //Console.WriteLine(result1);
+
+
+            //var data1 = new List<string> { "ant", "bison", "camel", "duck", "elephant" };
+
+            //Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 2) as List<string>)); // [ 'camel', 'duck', 'elephant' ]
+            //Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 2, 4) as List<string>)); // [ 'camel', 'duck' ]
+            //Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 1, 5) as List<string>)); // [ 'bison', 'camel', 'duck', 'elephant' ]
+            //Console.WriteLine(string.Join(", ", LatihanArray.slice(data1) as List<string>)); // [ 'ant', 'bison', 'camel', 'duck', 'elephant' ]
+            //Console.WriteLine(string.Join(", ", LatihanArray.slice(data1, 20) as List<string>)); // []
+            //Console.WriteLine(LatihanArray.slice() as string); // Invalid data
+
+            // ArrayList.cs
+            ArrayList.mArrayList();
+
+            // Dictionary.cs
+            LearnDictionary.GetDictionary();
+
+            // FunctionalParameter.cs
+            FunctionalParameter.GetFunctionalParameter();
         }
         public static void Conversi()
         {
